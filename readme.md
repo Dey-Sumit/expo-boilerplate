@@ -8,7 +8,9 @@ This project uses `bun`
 
 - [x] expo + TypeScript
 - [x] eslint + prettier + husky + commit-lint
-- [ ] react-navigation
-- [ ] folder structure
+- [x] alias imports
+- [x] react-navigation
+- [x] folder structure
+- [x] eslint and prettier rules configured
 - [ ] rn-mmkv
 
