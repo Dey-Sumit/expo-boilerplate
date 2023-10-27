@@ -14,6 +14,7 @@ This project uses `bun`
 - [x] eslint and prettier rules configured
 - [x] added icons
 - [x] rn-mmkv
-- [x] add login basic functionality using mmkv
-- [x] added reanimated
+- [x] login basic functionality using mmkv
+- [x] reanimated
+- [x] glue-stack-ui
 
