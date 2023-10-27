@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -22,20 +22,20 @@ const HomeTabsScreens = () => {
               navigation.navigate("Profile");
             }}
           >
-            <Text>P</Text>
+            <MaterialCommunityIcons name="account" color="black" size={26} />
           </TouchableOpacity>
         ),
       })}
     >
       <Tab.Screen
-        name="Products"
+        name="Home"
         component={HomeScreen}
         options={{
           tabBarLabel: "Products",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
-          title: "Mandir Darshan",
+          title: "Yo Yo App",
         }}
       />
 

@@ -1,20 +1,25 @@
 import React from "react";
 import { Button, StyleSheet, View } from "react-native";
 
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { useAuth } from "~/hooks/auth.hook";
 
-import { AuthStackParams } from "~/types/navigator.types";
+// type ScreenProps = NativeStackScreenProps<AuthStackParams, "LoginScreen">;
 
-type ScreenProps = NativeStackScreenProps<AuthStackParams, "LoginScreen">;
+const LoginScreen = () => {
+  const { setAuthDetails } = useAuth();
 
-const LoginScreen = ({ route }: ScreenProps) => {
-  const { setIsAuthenticated } = route.params || {};
   return (
     <View style={styles.container}>
       <Button
         title="Login"
         onPress={() => {
-          setIsAuthenticated?.(true);
+          setAuthDetails({
+            mobileNumber: "1234567890",
+            tokens: {
+              accessToken: "yo_acessi",
+              refreshToken: "yeh_refri",
+            },
+          });
         }}
       />
     </View>

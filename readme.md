@@ -12,5 +12,6 @@ This project uses `bun`
 - [x] react-navigation
 - [x] folder structure
 - [x] eslint and prettier rules configured
-- [ ] rn-mmkv
+- [x] rn-mmkv
+- [x] add login basic functionality using mmkv
 

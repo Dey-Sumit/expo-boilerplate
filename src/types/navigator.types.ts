@@ -1,11 +1,9 @@
 export type AuthStackParams = {
   LaunchScreen: undefined;
-  LoginScreen?: {
-    setIsAuthenticated?: React.Dispatch<React.SetStateAction<boolean>>;
-  };
+  LoginScreen: undefined;
 };
 
 export type MainStackParams = {
-  Home: undefined;
+  HomeTabs: undefined;
   Profile: undefined;
 };

@@ -1,20 +1,16 @@
-import { useState } from "react";
-
 import { NavigationContainer } from "@react-navigation/native";
+
+import { useAuth } from "~/hooks/auth.hook";
 
 import AuthStackScreens from "./src/navigators/AuthStack.navigator";
 import MainStackScreens from "./src/navigators/MainStack.navigator";
 
 const App = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const { isAuthenticated } = useAuth();
 
   return (
     <NavigationContainer>
-      {!isAuthenticated ? (
-        <AuthStackScreens setIsAuthenticated={setIsAuthenticated} />
-      ) : (
-        <MainStackScreens />
-      )}
+      {!isAuthenticated ? <AuthStackScreens /> : <MainStackScreens />}
     </NavigationContainer>
   );
 };

@@ -8,11 +8,7 @@ const AuthStack = createNativeStackNavigator<AuthStackParams>();
 
 /* -------------- the types for the auth stack params ------------- */
 
-const AuthStackScreens = ({
-  setIsAuthenticated,
-}: {
-  setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
-}) => {
+const AuthStackScreens = () => {
   return (
     <AuthStack.Navigator
       screenOptions={{
@@ -32,11 +28,8 @@ const AuthStackScreens = ({
       <AuthStack.Screen
         name="LoginScreen"
         component={LoginScreen}
-        initialParams={{
-          setIsAuthenticated,
-        }}
         options={{
-          headerTitle: "Enter Mobile Number",
+          headerTitle: "One Tap Login",
         }}
       />
     </AuthStack.Navigator>
