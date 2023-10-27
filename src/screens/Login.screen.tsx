@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, StyleSheet, View } from "react-native";
+
+import { Box, Button, ButtonText } from "@gluestack-ui/themed";
 
 import { useAuth } from "~/hooks/auth.hook";
 
@@ -9,9 +10,19 @@ const LoginScreen = () => {
   const { setAuthDetails } = useAuth();
 
   return (
-    <View style={styles.container}>
+    <Box
+      justifyContent="flex-end"
+      p="$10"
+      pb="$12"
+      alignItems="center"
+      flex={1}
+      rowGap="$4"
+    >
       <Button
-        title="Login"
+        size="lg"
+        width="100%"
+        variant="solid"
+        action="positive"
         onPress={() => {
           setAuthDetails({
             mobileNumber: "1234567890",
@@ -21,17 +32,11 @@ const LoginScreen = () => {
             },
           });
         }}
-      />
-    </View>
+      >
+        <ButtonText> Press me to Login</ButtonText>
+      </Button>
+    </Box>
   );
 };
 
 export default LoginScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});

@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
 
+import { Box, Button, ButtonText, Heading } from "@gluestack-ui/themed";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 import { AuthStackParams } from "../types/navigator.types";
@@ -8,24 +8,17 @@ import { AuthStackParams } from "../types/navigator.types";
 type ScreenProps = NativeStackScreenProps<AuthStackParams, "LaunchScreen">;
 const LaunchScreen = ({ navigation }: ScreenProps) => {
   return (
-    <View style={styles.container}>
-      <Text>Launch Screen</Text>
+    <Box justifyContent="center" alignItems="center" flex={1} rowGap="$4">
+      <Heading>Launch Screen</Heading>
       <Button
-        title="go to Login"
         onPress={() => {
           navigation.navigate("LoginScreen");
         }}
-      />
-    </View>
+      >
+        <ButtonText>Go to Login</ButtonText>
+      </Button>
+    </Box>
   );
 };
 
 export default LaunchScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});

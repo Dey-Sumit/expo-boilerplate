@@ -1,25 +1,31 @@
 import React from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+
+import { Box, Button, ButtonText } from "@gluestack-ui/themed";
 
 import { useAuth } from "~/hooks/auth.hook";
 
 const SettingsScreen = () => {
   const { resetAuthDetails } = useAuth();
   return (
-    <View style={styles.container}>
-      <Text>Settings Screen</Text>
-
-      <Button title="Logout" onPress={resetAuthDetails} />
-    </View>
+    <Box
+      justifyContent="flex-end"
+      p="$10"
+      pb="$12"
+      alignItems="center"
+      flex={1}
+      rowGap="$4"
+    >
+      <Button
+        size="lg"
+        width="100%"
+        variant="outline"
+        action="negative"
+        onPress={resetAuthDetails}
+      >
+        <ButtonText> Logout</ButtonText>
+      </Button>
+    </Box>
   );
 };
 
 export default SettingsScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
