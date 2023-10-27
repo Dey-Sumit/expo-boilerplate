@@ -15,4 +15,5 @@ This project uses `bun`
 - [x] added icons
 - [x] rn-mmkv
 - [x] add login basic functionality using mmkv
+- [x] added reanimated
 

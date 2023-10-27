@@ -3,8 +3,8 @@ import { TouchableOpacity } from "react-native";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import HomeScreen from "../screens/Home.screen";
-import SettingsScreen from "../screens/Settings.screen";
+import HomeScreen from "~/screens/Home.screen";
+import SettingsScreen from "~/screens/Settings.screen";
 
 const Tab = createBottomTabNavigator();
 
