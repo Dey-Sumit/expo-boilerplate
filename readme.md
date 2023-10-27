@@ -1,7 +1,5 @@
 # Expo React Native Boilerplate
 
-![Boilerplate Banner](link_to_banner_image)
-
 This is a ready-to-use boilerplate for developing Expo-based React Native projects with TypeScript. It comes with a set of pre-configured tools and libraries to kickstart your mobile app development journey.
 
 ## Tools and Features
@@ -17,9 +15,10 @@ This is a ready-to-use boilerplate for developing Expo-based React Native projec
 - [x] Login Basic Functionality Using MMKV
 - [x] Reanimated
 - [x] Glue-Stack-UI
-- [ ] splash screen
+- [ ] Splash screen
 - [ ] react-query
-- [ ] notification
+- [ ] Zustand
+- [ ] Notification
 
 
 ## Usage
