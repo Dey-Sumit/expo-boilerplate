@@ -45,11 +45,7 @@ const HomeTabsScreens = () => {
         options={{
           tabBarLabel: "Settings",
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons
-              name="playlist-check"
-              color={color}
-              size={26}
-            />
+            <MaterialCommunityIcons name="cog" color={color} size={26} />
           ),
         }}
       />
