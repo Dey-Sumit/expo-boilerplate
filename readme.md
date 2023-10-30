@@ -15,7 +15,7 @@ This is a ready-to-use boilerplate for developing Expo-based React Native projec
 - [x] Login Basic Functionality Using MMKV
 - [x] Reanimated
 - [x] Glue-Stack-UI
-- [ ] Splash screen
+- [x] App Icons & Splash screen
 - [ ] react-query
 - [ ] Zustand
 - [ ] Notification
