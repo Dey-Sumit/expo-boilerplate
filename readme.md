@@ -25,6 +25,12 @@ This is a ready-to-use boilerplate for developing Expo-based React Native projec
 
 This boilerplate is designed to help you get started quickly with your Expo-based React Native project. You can begin building your app right away, utilizing the pre-configured tools and libraries provided.
 
+# Get started
+- Change the package name in app.json
+- replace the app icons splash screen in assets folder
+- and run `npx expo prebuild --clean`
+* delete the ios and android folder if you want. Just use the expo-dev-client
+
 ## Contributions
 
 Contributions and suggestions are welcome. Feel free to open issues and create pull requests to enhance this boilerplate and make it even more useful for the community.
